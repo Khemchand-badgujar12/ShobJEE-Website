@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juicy Fruits - ShobJEE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        header img {
+            max-height: 60px;
+            border-radius: 8px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+            padding-bottom: 60px; /* Add padding to ensure footer doesn't overlap */
+        }
+        .card {
+            display: inline-block;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: white;
+            width: 250px;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .card h3 {
+            margin: 10px 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+            padding-bottom: 60px;
+        }
+        .card {
+            display: inline-block;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: white;
+            width: 250px;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .card h3 {
+            margin: 10px 0;
+        }
+        .card button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .card button:hover {
+            background-color: #45a049;
+        }
+        .card button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1000; /* Ensures footer is above all content */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://tools.corenexis.com/image/cnxm/M25/01/b9e42d0712.webp" alt="ShobJEE Logo">
+        <div>
+            <h1>ShobJEE</h1>
+            <p>A One Stop Website for Buying Fresh Vegetables & Fruits</p>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html#home">Home</a>
+        <a href="index.html#products">Products</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="index.html#about">About</a>
+        <a href="login.html#login">Login</a>
+        <a href="cart.html#cart">Cart</a>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Juicy Fruits</h2>
+        </section>
+        
+        <!-- Kg-based products -->
+        <div class="card" data-product="Apples" data-price="195" data-measure="kg">
+            <img src="https://www.bigbasket.com/media/uploads/p/l/40134281_22-fresho-baby-apple-shimla.jpg" alt="Apples">
+            <h3>Apples</h3>
+            <p>Price: ₹195 / kg</p>
+            <button onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        <div class="card" data-product="Pomegranate" data-price="405" data-measure="kg">
+            <img src="https://www.bigbasket.com/media/uploads/p/l/20000708_15-fresho-pomegranate.jpg" alt="Pomegranate">
+            <h3>Pomegranate</h3>
+            <p>Price: ₹405 / kg</p>
+            <button onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        <div class="card" data-product="Kiwi" data-price="46" data-measure="unit">
+            <img src="https://www.bigbasket.com/media/uploads/p/l/20000911_35-fresho-kiwi-green.jpg" alt="Kiwi">
+            <h3>Kiwi</h3>
+            <p>Price: ₹46 / unit</p>
+            <button onclick="addToCart(this)">Add to Cart</button>
+        </div>
+
+        <!-- Unit-based products -->
+        <div class="card" data-product="Banana" data-price="5" data-measure="unit">
+            <img src="https://www.bigbasket.com/media/uploads/p/l/10000025_32-fresho-banana-robusta.jpg" alt="Banana">
+            <h3>Banana</h3>
+            <p>Price: ₹5 / unit</p>
+            <button onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        <div class="card" data-product="Gir Kesar Keri" data-price="79" data-measure="unit">
+            <img src="https://www.bigbasket.com/media/uploads/p/l/30000974_12-fresho-kesar-mango.jpg" alt="Gir Kesar Keri">
+            <h3>Gir Kesar Keri</h3>
+            <p>Price: ₹79 / unit</p>
+            <button onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        <div class="card" data-product="Alphonso Mango" data-price="139" data-measure="unit">
+            <img src="https://www.bigbasket.com/media/uploads/p/l/30001006_11-fresho-alphonso-mango-ratnagiri.jpg" alt="Alphonso Mango">
+            <h3>Alphonso Mango</h3>
+            <p>Price: ₹139 / unit</p>
+            <button onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        <div class="card" data-product="Orange" data-price="87" data-measure="kg">
+            <img src="https://www.bigbasket.com/media/uploads/p/l/1222181_2-fresho-orange-nagpur-regular.jpg" alt="Orange">
+            <h3>Orange</h3>
+            <p>Price: ₹87 / kg</p>
+            <button onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        <div class="card" data-product="Watermelon-Small" data-price="59" data-measure="unit">
+            <img src="https://www.bigbasket.com/media/uploads/p/l/10000207_25-fresho-watermelon-small.jpg" alt="Watermelon-Small">
+            <h3>Watermelon-Small</h3>
+            <p>Price: ₹59 / unit</p>
+            <button onclick="addToCart(this)">Add to Cart</button>
+        </div>
+
+        <!-- More products can follow the same pattern -->
+    </main>
+    <footer>
+        <p>&copy; 2025 ShobJEE. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function addToCart(button) {
+            const productCard = button.parentElement;
+            const productName = productCard.dataset.product;
+            const productPrice = parseFloat(productCard.dataset.price);
+            const productMeasure = productCard.dataset.measure;
+
+            // Retrieve current cart from localStorage
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Check if the product is already in the cart
+            if (cart.some(item => item.name === productName)) {
+                alert(`${productName} is already in your cart!`);
+                return;
+            }
+
+            // Add the product to the cart
+            cart.push({ name: productName, price: productPrice, measure: productMeasure });
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Disable the "Add to Cart" button once added
+            button.disabled = true;
+            button.textContent = 'Added to Cart';
+
+            alert(`${productName} has been added to the cart!`);
+        }
+
+        // Disable "Add to Cart" button if the product is already in the cart
+        window.onload = function() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            document.querySelectorAll('.card').forEach(card => {
+                const productName = card.dataset.product;
+                if (cart.some(item => item.name === productName)) {
+                    card.querySelector('button').disabled = true;
+                    card.querySelector('button').textContent = 'Added to Cart';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

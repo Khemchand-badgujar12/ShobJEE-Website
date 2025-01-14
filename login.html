@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ShobJEE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        header img {
+            max-height: 60px;
+            border-radius: 8px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+            padding-bottom: 60px; /* Add padding to ensure footer doesn't overlap */
+        }
+        .card {
+            display: inline-block;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: white;
+            width: 250px;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .card h3 {
+            margin: 10px 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 80px);
+        }
+        .login-container {
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            box-sizing: border-box; /* Ensures padding does not affect width */
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+        .login-container input, .login-container select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box; /* Ensures padding does not affect width */
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background-color: #45a049;
+        }
+        .role-selection {
+            margin-bottom: 20px;
+        }
+        .role-selection label {
+            display: inline-flex;  /* Ensures radio button and text are inline */
+            align-items: center;   /* Vertically aligns the radio button and text */
+            margin-right: 20px;    /* Adds space between the two options */
+            white-space: nowrap;   /* Prevents the text from wrapping to the next line */
+        }
+        .role-selection input[type="radio"] {
+            margin-right: 10px; /* Adds space between the radio button and the label */
+        }
+        .register-link {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .register-link a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1000; /* Ensures footer is above all content */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://tools.corenexis.com/image/cnxm/M25/01/b9e42d0712.webp" alt="ShobJEE Logo">
+        <div>
+            <h1>ShobJEE</h1>
+            <p>A One Stop Website for Buying Fresh Vegetables & Fruits</p>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html#home">Home</a>
+        <a href="index.html#products">Products</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="index.html#about">About</a>
+        <a href="login.html#login">Login</a>
+        <a href="cart.html#cart">Cart</a>
+    </nav>
+    <main>
+        <div class="login-container">
+            <h2>Login to Your Account</h2>
+            <!-- Role Selection Section -->
+            <div class="role-selection">
+                <label>
+                    <input type="radio" name="role" value="vendor" required>
+                    Login as Vendor/Farmer
+                </label>
+                <label>
+                    <input type="radio" name="role" value="customer" required>
+                    Login as Shopper/Customer
+                </label>
+            </div>
+
+            <!-- Form for credentials -->
+            <form>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+
+            <!-- Registration Link -->
+            <div class="register-link">
+                <p>Don't have an account? <a href="register.html">Register Here</a></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 ShobJEE. All rights reserved.</p>
+    </footer>
+    <script>
+        // Add interactivity if needed
+        console.log('Welcome to ShobJEE!');
+    </script>
+</body>
+</html>
